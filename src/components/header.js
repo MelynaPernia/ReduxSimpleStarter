@@ -1,8 +1,11 @@
 import React from 'react'
-const Header = () => (
+const Header = ({data}) => {
+    
+return(
     <header>
-        <p>Mis Hobbies</p>
+        <p>{data}</p>
     </header>
 
 )
+}
 export default Header

@@ -1,13 +1,17 @@
 import React from 'react'
+const SectionnHobbies = ({ hobbies }) => {
+  const listas = [];
+  hobbies.forEach(element => {
+    listas.push(<li key={element}>{element}</li>)
+  })
+  return (
 
-const SectionnHobbies = () => (
-  <section>
-    <ul>
-      <li>Jugar</li>
-      <li>Cantar</li>
-      <li>Leer</li>
-    </ul>
+    <section>
+      <ul>
+        {listas}
+      </ul>
 
-  </section>
-)
+    </section>
+  )
+}
 export default SectionnHobbies
