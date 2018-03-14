@@ -4,7 +4,7 @@ const Header = (props) => {
 return(
     <header>
         <p>{props.info}</p>
-        <img src={props.img}/>
+        <img src={props.imagen}/>
     </header>
 
 )
