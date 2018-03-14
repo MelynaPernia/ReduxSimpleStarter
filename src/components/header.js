@@ -1,9 +1,10 @@
 import React from 'react'
-const Header = ({data}) => {
-    
+const Header = (props) => {
+   
 return(
     <header>
-        <p>{data}</p>
+        <p>{props.info}</p>
+        <img src={props.img}/>
     </header>
 
 )
